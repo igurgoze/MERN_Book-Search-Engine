@@ -8,6 +8,9 @@ import {
 } from 'react-bootstrap';
 
 import { getMe, deleteBook } from '../utils/API';
+import {useMutation, useQuery} from '@apollo/client'
+import {REMOVE_BOOK} from '../utils/mutations'
+import {GET_ME} from '../utils/queries'
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 
@@ -16,6 +19,9 @@ const SavedBooks = () => {
 
   // use this to determine if `useEffect()` hook needs to run again
   const userDataLength = Object.keys(userData).length;
+
+  const [getMe] = useQuery(GET_ME)
+  const [deleteBook] = useMutation(REMOVE_BOOK)
 
   useEffect(() => {
     const getUserData = async () => {
@@ -66,7 +72,6 @@ const SavedBooks = () => {
     }
   };
 
-  // if data isn't here yet, say so
   if (!userDataLength) {
     return <h2>LOADING...</h2>;
   }
