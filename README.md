@@ -3,29 +3,21 @@
 ## Description
 Refactor of a functioning application using the Apollo Servers and MERN
 
-## Table of contents
+![screenshot](/books.PNG)
 
-- [Installation](#Insallation)
+## Table of contents
 
 - [Usage](#Usage)
 
 - [Contribution](#Contributing)
 
-- [Test](#Test)
-
 - [Questions](#Questions)
 
-## Installation
-
-
 ## Usage
-Login/Register on our website link, you can also search for books without logging in!
+Login/Register on the [Website Link](https://acceptable-tree-man.herokuapp.com/), you can also search for books without logging in!
 
 ## Contributing
 Ian Gurgoze
-
-## Test
-
 
 ## Questions
 
